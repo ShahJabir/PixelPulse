@@ -1,82 +1,60 @@
-# 
+# PixelPulse - 2D Metaverse Game
 
-<a alt="Nx logo" href="https://nx.dev" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="45"></a>
+PixelPulse is a Zep.us-inspired 2D metaverse where users can explore a pixel-art world, chat, send messages, and make video calls. Built with a modern tech stack—NextJS, NodeJS/ExpressJS, MongoDB with Prisma, WebSockets/WebRTC, NX monorepo, Docker, and GitHub Actions—this project delivers a scalable, real-time social experience. Join our open-source community to contribute to the future of virtual spaces!
 
-✨ Your new, shiny [Nx workspace](https://nx.dev) is almost ready ✨.
+## Features
+- **Explore**: Navigate a vibrant 2D pixel-art world
+- **Chat**: Real-time text and voice messaging via WebSockets
+- **Video Calls**: Seamless peer-to-peer video calls with WebRTC
+- **Customizable Avatars**: Personalize your in-game presence
+- **Scalable Backend**: Powered by NodeJS, ExpressJS, and MongoDB
+- **Dev-Friendly**: NX monorepo and Docker for streamlined workflows
 
-[Learn more about this workspace setup and its capabilities](https://nx.dev/nx-api/node?utm_source=nx_project&amp;utm_medium=readme&amp;utm_campaign=nx_projects) or run `npx nx graph` to visually explore what was created. Now, let's get you up to speed!
+## Tech Stack
+- **Frontend**: NextJS
+- **Backend**: NodeJS, ExpressJS
+- **Database**: MongoDB with Prisma ORM
+- **Real-Time**: WebSockets, WebRTC
+- **Monorepo**: NX
+- **DevOps**: Docker, GitHub Actions for CI/CD
 
-## Finish your CI setup
+## Getting Started
 
-[Click here to finish setting up your workspace!](https://cloud.nx.app/connect/X4GAq303CQ)
+### Prerequisites
+- Node.js (>= 18.x)
+- Docker
+- MongoDB
+- Git
 
+### Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/<your-username>/pixelpulse.git
+   cd pixelpulse
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Set up environment variables:
+   - Copy `.env.example` to `.env` and configure your settings (e.g., MongoDB URI, WebRTC configs).
+4. Run with Docker:
+   ```bash
+   docker-compose up --build
+   ```
+5. Access the app at `http://localhost:3000`.
 
-## Run tasks
+### Local Development
+- Run the NextJS frontend: `nx run frontend:dev`
+- Run the ExpressJS backend: `nx run backend:dev`
 
-To run the dev server for your app, use:
+## Contributing
+We welcome contributions! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on code style, pull requests, and issues. Fork the repo, make your changes, and submit a PR to join the PixelPulse community.
 
-```sh
-npx nx serve auth_service
-```
+## License
+This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
 
-To create a production bundle:
+## Contact
+For questions or feedback, open an issue or reach out via [GitHub Discussions](https://github.com/<your-username>/pixelpulse/discussions).
 
-```sh
-npx nx build auth_service
-```
-
-To see all available targets to run for a project, run:
-
-```sh
-npx nx show project auth_service
-```
-        
-These targets are either [inferred automatically](https://nx.dev/concepts/inferred-tasks?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) or defined in the `project.json` or `package.json` files.
-
-[More about running tasks in the docs &raquo;](https://nx.dev/features/run-tasks?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-
-## Add new projects
-
-While you could add new projects to your workspace manually, you might want to leverage [Nx plugins](https://nx.dev/concepts/nx-plugins?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) and their [code generation](https://nx.dev/features/generate-code?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) feature.
-
-Use the plugin's generator to create new projects.
-
-To generate a new application, use:
-
-```sh
-npx nx g @nx/node:app demo
-```
-
-To generate a new library, use:
-
-```sh
-npx nx g @nx/node:lib mylib
-```
-
-You can use `npx nx list` to get a list of installed plugins. Then, run `npx nx list <plugin-name>` to learn about more specific capabilities of a particular plugin. Alternatively, [install Nx Console](https://nx.dev/getting-started/editor-setup?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) to browse plugins and generators in your IDE.
-
-[Learn more about Nx plugins &raquo;](https://nx.dev/concepts/nx-plugins?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) | [Browse the plugin registry &raquo;](https://nx.dev/plugin-registry?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-
-
-[Learn more about Nx on CI](https://nx.dev/ci/intro/ci-with-nx#ready-get-started-with-your-provider?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-
-## Install Nx Console
-
-Nx Console is an editor extension that enriches your developer experience. It lets you run tasks, generate code, and improves code autocompletion in your IDE. It is available for VSCode and IntelliJ.
-
-[Install Nx Console &raquo;](https://nx.dev/getting-started/editor-setup?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-
-## Useful links
-
-Learn more:
-
-- [Learn more about this workspace setup](https://nx.dev/nx-api/node?utm_source=nx_project&amp;utm_medium=readme&amp;utm_campaign=nx_projects)
-- [Learn about Nx on CI](https://nx.dev/ci/intro/ci-with-nx?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-- [Releasing Packages with Nx release](https://nx.dev/features/manage-releases?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-- [What are Nx plugins?](https://nx.dev/concepts/nx-plugins?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-
-And join the Nx community:
-- [Discord](https://go.nx.dev/community)
-- [Follow us on X](https://twitter.com/nxdevtools) or [LinkedIn](https://www.linkedin.com/company/nrwl)
-- [Our Youtube channel](https://www.youtube.com/@nxdevtools)
-- [Our blog](https://nx.dev/blog?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
+🚀 Let's build the ultimate 2D metaverse together!
